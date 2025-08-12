@@ -41,7 +41,7 @@ Please check back soon for updates or watch our repository for release announcem
 ## 📖 Citation
 If you find our work helpful, feel free to give us a cite.
 ```bibtex
-@article{grovemoe2025,
+@article{GroveMoE,
 title = {GroveMoE: Towards Efficient and Superior MoE LLMs with Adjugate Experts},
 author = {Wu, Haoyuan and Chen, Haoxing and Chen, Xiaodong and Zhou, Zhanchao and Chen, Tieyuan and Zhuang, Yihong and Lu, Guoshan and Zhao, Junbo and Liu, Lin and Huang, Zenan and Lan, Zhenzhong and Yu, Bei and Li, Jianguo},
 journal = {arXiv preprint arXiv:2508.07785},

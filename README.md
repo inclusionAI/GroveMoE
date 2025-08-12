@@ -7,7 +7,9 @@
 <p align="center">
 🤗 <a href="">Hugging Face</a>&nbsp&nbsp | &nbsp&nbsp 📑 <a href="https://arxiv.org/abs/2508.07785">Paper</a> &nbsp&nbsp | &nbsp&nbsp 🔗 <a href="https://github.com/inclusionAI/GroveMoE">Github</a>&nbsp&nbsp
 
-> GroveMoE is an **open-source** family of large language models developed by the **AGI Center, Ant Group Research**  that introduces **Grove MoE**, a new sparse architecture using **adjugate experts** for dynamic computation allocation.  
+## Overview
+
+GroveMoE is an **open-source** family of large language models developed by the **AGI Center, Ant Group Research**  that introduces **Grove MoE**, a new sparse architecture using **adjugate experts** for dynamic computation allocation.  
 With **33 B total parameters** and **3.14–3.28 B active parameters per token**, GroveMoE delivers **state-of-the-art** results across reasoning, mathematics, and code generation while keeping inference costs low.  
 **⚠️ Model weights are comming soon.**
 
@@ -41,6 +43,3 @@ journal = {arXiv preprint arXiv:2508.07785},
 year = {2025}
 }
 ```
-
-## Contact Us
-If you are interested to leave a message to either our research team (chenhaoxing.chx@antgroup.com, lijg.zero@antgroup.com).

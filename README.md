@@ -15,7 +15,7 @@ With **33 B total parameters** and **3.14–3.28 B active parameters per token**
 
 ---
 
-## 🌳 Key Highlights
+## Key Highlights
 | Feature | Description |
 |---------|-------------|
 | **Architecture** | Novel **adjugate experts** grouped with ordinary experts; shared computation is executed once, then reused, cutting FLOPs. |
@@ -25,13 +25,13 @@ With **33 B total parameters** and **3.14–3.28 B active parameters per token**
 
 ---
 
-## 📊 Benchmark Results
+## Benchmark Results
 
 <p align="center"><img src="assets/results.png" width="95%"></p>
 
 ---
 
-## 📖 Citation
+## Citation
 If you find our work helpful, feel free to give us a cite.
 ```bibtex
 @article{grovemoe2025,

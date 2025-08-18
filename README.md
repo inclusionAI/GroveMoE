@@ -5,13 +5,12 @@
 [![Hugging Face](https://img.shields.io/badge/Hugging%20Face-FFD21E?logo=huggingface&logoColor=000)](https://huggingface.co/inclusionAI) -->
 
 <p align="center">
-🤗 <a href="">Hugging Face</a>&nbsp&nbsp | &nbsp&nbsp 📑 <a href="https://arxiv.org/abs/2508.07785">Paper</a> &nbsp&nbsp | &nbsp&nbsp 🔗 <a href="https://github.com/inclusionAI/GroveMoE">Github</a>&nbsp&nbsp
+🤗 <a href="https://huggingface.co/collections/inclusionAI/grovemoe-68a2b58acbb55827244ef664">Models</a>&nbsp&nbsp | &nbsp&nbsp 📑 <a href="https://arxiv.org/abs/2508.07785">Paper</a> &nbsp&nbsp | &nbsp&nbsp 🔗 <a href="https://github.com/inclusionAI/GroveMoE">Github</a>&nbsp&nbsp
 
 ## Overview
 
 GroveMoE is an **open-source** family of large language models developed by the **AGI Center, Ant Group Research**  that introduces **Grove MoE**, a new sparse architecture using **adjugate experts** for dynamic computation allocation.  
 With **33 B total parameters** and **3.14–3.28 B active parameters per token**, GroveMoE delivers **state-of-the-art** results across reasoning, mathematics, and code generation while keeping inference costs low.  
-**⚠️ Model weights are comming soon.**
 
 <p align="center"><img src="assets/grovemoe.png" width="95%"></p>
 

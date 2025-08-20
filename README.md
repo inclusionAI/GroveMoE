@@ -126,3 +126,13 @@ journal = {arXiv preprint arXiv:2508.07785},
 year = {2025}
 }
 ```
+
+Acknowledgements
+
+We would like to thank the open-source community for their great contributions:
+
+## 🙏 Acknowledgements
+
+- [**Qwen3**](https://github.com/QwenLM/Qwen3) for releasing high-quality foundation models.  
+- [**Transformers**](https://github.com/huggingface/transformers) for providing a versatile framework for training and inference.  
+- [**SGLang**](https://github.com/sgl-project/sglang) for enabling efficient large-scale serving.  

@@ -127,10 +127,6 @@ year = {2025}
 }
 ```
 
-Acknowledgements
-
-We would like to thank the open-source community for their great contributions:
-
 ## Acknowledgements
 We would like to thank the open-source community for their great contributions:
 - [**Qwen3**](https://github.com/QwenLM/Qwen3) for releasing high-quality foundation models.  

@@ -131,7 +131,7 @@ Acknowledgements
 
 We would like to thank the open-source community for their great contributions:
 
-## 🙏 Acknowledgements
+## Acknowledgements
 
 - [**Qwen3**](https://github.com/QwenLM/Qwen3) for releasing high-quality foundation models.  
 - [**Transformers**](https://github.com/huggingface/transformers) for providing a versatile framework for training and inference.  

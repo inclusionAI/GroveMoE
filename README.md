@@ -79,7 +79,7 @@ SGLang could be used to launch a server with OpenAI-compatible API service.
 
 First, install transformers:
 ```shell
-cd /src/transformers-4.51.3
+cd src/transformers-4.51.3
 pip install .
 ```
 Then, install SGLang:

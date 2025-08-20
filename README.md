@@ -30,9 +30,7 @@ With **33 B total parameters** and **3.14–3.28 B active parameters per token**
 ## Run GroveMoE
 
 ### 🤗 Transformers Quick Start
-
 Transformers is a library of pretrained natural language processing for inference and training. 
-The latest version of `transformers` is recommended and `transformers==4.51.3` is required.
 
 The following contains a code snippet illustrating how to use GroveMoE to generate content based on given inputs. 
 ```python

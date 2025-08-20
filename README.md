@@ -26,6 +26,92 @@ With **33 B total parameters** and **3.14–3.28 B active parameters per token**
 
 ---
 
+
+## Run GroveMoE
+
+### 🤗 Transformers Quick Start
+
+Transformers is a library of pretrained natural language processing for inference and training. 
+The latest version of `transformers` is recommended and `transformers==4.51.3` is required.
+
+The following contains a code snippet illustrating how to use GroveMoE to generate content based on given inputs. 
+```python
+from transformers import AutoModelForCausalLM, AutoTokenizer
+
+model_name = "inclusionAI/GroveMoE-Inst"
+
+# load the tokenizer and the model
+tokenizer = AutoTokenizer.from_pretrained(model_name)
+model = AutoModelForCausalLM.from_pretrained(
+    model_name,
+    torch_dtype="auto",
+    device_map="auto"
+)
+
+# prepare the model input
+prompt = "Give me a short introduction to large language model."
+messages = [
+    {"role": "user", "content": prompt}
+]
+text = tokenizer.apply_chat_template(
+    messages,
+    tokenize=False,
+    add_generation_prompt=True,
+)
+model_inputs = tokenizer([text], return_tensors="pt").to(model.device)
+
+# conduct text completion
+generated_ids = model.generate(
+    **model_inputs,
+    max_new_tokens=16384
+)
+output_ids = generated_ids[0][len(model_inputs.input_ids[0]):].tolist() 
+
+content = tokenizer.decode(output_ids, skip_special_tokens=True)
+
+print("content:", content)
+```
+
+### 🚀 SGLang Quick Start
+
+[SGLang](https://github.com/sgl-project/sglang) is a fast serving framework for large language models and vision language models.
+SGLang could be used to launch a server with OpenAI-compatible API service. 
+
+1️⃣ Install Dependencies
+
+First, install transformers:
+```shell
+cd /src/transformers-4.51.3
+pip install .
+```
+Then, install SGLang:
+2. Install SGLang
+```shell
+cd src/sglang-0.4.6.post5
+pip install .
+```
+2️⃣ Launch the Server
+
+Run the following command to start SGLang:
+```shell
+python -m sglang.launch_server --model-path inclusionAI/GroveMoE-Inst --port 30000 --context-length 32768
+```
+
+3️⃣ Access the API
+
+Once started, the OpenAI-compatible API will be available at `http://localhost:30000/v1`.
+
+Test it with curl:
+```shell
+curl http://localhost:30000/v1/chat/completions \
+  -H "Content-Type: application/json" \
+  -d '{
+    "model": "inclusionAI/GroveMoE-Inst",
+    "messages": [{"role": "user", "content": "Hello, SGLang!"}]
+  }'
+
+```
+
 ## Benchmark Results
 
 <p align="center"><img src="assets/results.png" width="95%"></p>
